@@ -10,11 +10,19 @@
     <h2>Inicio</h2>
     <h3> Bandas: Lista</h3>
 
-    <ul>
-        {% for Bandas in Bandas_list %}
-            <li> {{Banda.nombre}}</li>
-        {% endfor}
-    </ul>
+        {% for grupo in Bandas %}
+            <ul>
+                <li>
+                    {{grupo.nombre}}
+                    {{grupo.email}}
+                    {{grupo.miembros}}
+                
+                </li>
+            </ul>
+        {% endfor %} 
+
+    <button><a href="{% url 'LineUp:index' %}">Volver a Inicio</a></button>
+            
 
 
 </html>
