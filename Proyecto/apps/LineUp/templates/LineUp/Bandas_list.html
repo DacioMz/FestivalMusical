@@ -8,11 +8,13 @@
 <body>
     <h1>Proyecto final</h1>
     <h2>Inicio</h2>
+    <h3> Bandas: Lista</h3>
 
+    <ul>
+        {% for Bandas in Bandas %}
+            <li> {{Banda.nombre}}</li>
+        {% endfor}
+    </ul>
 
-    <button><a href="{% url 'LineUp:Bandas_list' %}">Bandas</a></button>
-
-
-</body>
 
 </html>

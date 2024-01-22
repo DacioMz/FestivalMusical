@@ -13,11 +13,20 @@ class Estilo_Musical (models.Model):
 
     def __str__ (self):
         return self.estilo
+    class Meta:
+        verbose_name="Estilo Musical"
+        verbose_name_plural="Estilos Musicales"
 
 class Nacionalidad (models.Model):
      pais = models.CharField(max_length=100)
 
      def __str__ (self):
         return self.pais
+     
+     class Meta:
+
+        verbose_name="Nacionalidad"
+        verbose_name_plural="Nacionalidades"
+     
 
 
