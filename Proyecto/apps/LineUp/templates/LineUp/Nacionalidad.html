@@ -6,15 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bandas que podran ver en del festival</h1>
-    <h2> Lista de bandas, correos y cantidad de miembros: </h2>
+    <h1>Nacioanlidades de las bandas que participan</h1>
+    <h2> lista de nacionalidades: </h2>
 
-        {% for grupo in Bandas %}
+        {% for Nacion in Nacionalidad %}
             <ul>
                 <li>
-                    {{grupo.nombre}}
-                    {{grupo.email}}
-                    {{grupo.miembros}}
+                    {{Nacion.pais}}
                 
                 </li>
             </ul>
