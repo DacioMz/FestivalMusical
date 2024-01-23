@@ -9,5 +9,5 @@ urlpatterns = [
     path('Nacionalidad', views.Nacionalidad, name="Nacionalidad"),
     path('Banda_forms', views.Banda_forms, name="Banda_forms"),
     path('Estilo_musical', views.Estilos_forms, name="Estilo_forms"),
-     path('Nacionalidad_forms', views.Nacionalidad_forms, name="Nacionalidad_forms"),
+    path('Nacionalidad_forms', views.Nacionalidad_forms, name="Nacionalidad_forms"),
      ]
