@@ -21,36 +21,26 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" href="#!">Información del evento</a>
                 <a class="btn btn-primary" href="#signup">Sign Up</a>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead">x
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                            <h1 class="text-center mb-3" class="mb-5">Festival Musical</h1>
+                                    <div>
+                                            <button><a type= "button" class="btn btn-primary btn-lg" href="{% url 'LineUp:Bandas_list' %}">Bandas</a></button>
+                                            <button><a type= "button" class="btn btn-primary btn-lg" href="{% url 'LineUp:Estilo_musicales' %}">Estilos</a></button>
+                                            <button><a type= "button" class="btn btn-primary btn-lg" href="{% url 'LineUp:Nacionalidad' %}">Nacionalidad</a></button>
+                                            <button><a type= "button" class="btn btn-primary btn-lg" href="{% url 'LineUp:Banda_forms' %}">Registrar banda</a></button>
+                                            <button><a type= "button" class="btn btn-primary btn-lg" href="{% url 'LineUp:Estilo_forms' %}">Registrar estilo</a></button>
+                                            <button><a type= "button" class="btn btn-primary btn-lg" href="{% url 'LineUp:Nacionalidad_forms'%}">Registrar nacionalidad</a></button>   
                                     </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
                                 <!-- Submit success message-->
                                 <!---->
                                 <!-- This is what your users will see when the form-->
@@ -66,8 +56,6 @@
                                 <!---->
                                 <!-- This is what your users will see when there is-->
                                 <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
                         </div>
                     </div>
                 </div>
